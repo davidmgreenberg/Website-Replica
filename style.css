@@ -447,7 +447,7 @@ overflow: hidden;
     max-width: 1200px;
     width:100%;
     margin: 0 auto;
-    padding:96px 0;
+    padding:96px 32px;
 }
 
 .steps__right--img {
@@ -1437,5 +1437,27 @@ margin-right:12px;
 
 .footer__copyright {
     padding:24px 0;
+    padding-left:
+    12px;
+}
+.footer__column--head {
+    font-size:16px;
+    margin-top: 24px;
+}
+
+.footer__column--item {
+    font-size: 12px;
+}
+
+.footer__column {
+    width:calc(100%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer__columns {
+    justify-content: space-evenly;
 }
 }
