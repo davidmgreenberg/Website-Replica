@@ -8,7 +8,7 @@
     <title>Treact Landing</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
-    
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -29,6 +29,25 @@
               </ul>
               <button class="nav__button">Sign Up</button>
             </div>
+            
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+             </button>
+
+             <div class="row--menu menu__backdrop">
+               <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+               </button>
+               <ul class="menu__links"> 
+                <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
+                <li class="menu__list"><a href="#features" class="menu__link" onclick="closeMenu()">Features</a></li>
+                <li class="menu__list"><a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                <li class="menu__list"><a href="#testimonials" class="menu__link" onclick="closeMenu()">Testimonials</a></li>
+                <li class="menu__list"><a href="#faqs" class="menu__link" onclick="closeMenu()">FAQS</a></li>
+                <li class="menu__list"> <button class="nav__button" onclick="closeMenu()">Sign Up</button></li>
+               </ul>
+             
+              </div>
           </nav>
         </div>
         <div class="row">
@@ -68,7 +87,7 @@
       </div>
     </section>
 
-   <section id="services">
+   <section id="features">
     <div class="container__features">
         <div class="features__row">
           <span class="text--purple features__header">FEATURES</span>
